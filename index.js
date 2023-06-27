@@ -60,9 +60,9 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    
+    domain: 'notagram-app-frontend.onrender.com',
     maxAge: 24*60*60*1000,
-    sameSite: false,
+    sameSite: 'none',
     //secure: true,
     httpOnly: true
   }
