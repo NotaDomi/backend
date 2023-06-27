@@ -63,7 +63,7 @@ app.use(session({
     domain: 'notagram-app-frontend.onrender.com',
     maxAge: 24*60*60*1000,
     sameSite: 'none',
-    secure: true,
+    secure: false,
     httpOnly: true
   }
 }))
