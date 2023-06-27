@@ -35,7 +35,7 @@ mongoose.connect(process.env.DB_URI)
 const db = mongoose.connection
 db.once('open', () => {
   console.log('Connesso al DB')
-  server.listen(process.env.PORT, () => {
+  app.listen(process.env.PORT, () => {
     console.log('App in ascolto')
   })
 })
