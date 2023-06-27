@@ -60,9 +60,9 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    domain: '.onrender.com',
+    
     maxAge: 24*60*60*1000,
-    sameSite: true,
+    sameSite: false,
     //secure: true,
     httpOnly: true
   }
