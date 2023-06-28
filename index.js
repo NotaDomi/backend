@@ -60,10 +60,10 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    domain: 'notagram-app-frontend.onrender.com',
+    domain: '*.up.railway.app',
     maxAge: 24*60*60*1000,
-    sameSite: 'none',
-    secure: false,
+    sameSite: false,
+    secure: true,
     httpOnly: true
   }
 }))
