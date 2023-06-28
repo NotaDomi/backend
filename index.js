@@ -63,7 +63,7 @@ app.use(session({
     domain: '*.up.railway.app',
     maxAge: 24*60*60*1000,
     sameSite: false,
-    secure: true,
+    //secure: true,
     httpOnly: true
   }
 }))
