@@ -46,7 +46,7 @@ const authMiddleware = require('./middlewares/auth')
 
 app.use(express.json())
 app.use(cors({
-  origin:["https://notagram-app-backend.onrender.com"],
+  origin:["https://www.app.notagram.live/"],
   methods: ["GET","POST"],
   credentials: true
 }))
@@ -60,9 +60,9 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    domain: '*.up.railway.app',
+    domain: '*.notagram.live',
     maxAge: 24*60*60*1000,
-    sameSite: false,
+    sameSite: true,
     //secure: true,
     httpOnly: true
   }
